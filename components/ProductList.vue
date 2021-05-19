@@ -19,7 +19,6 @@
 </template>
 
 <script>
-// import { mapState } from 'vuex'
 import ProductCard from './ProductCard'
 export default {
   components: {
@@ -27,7 +26,6 @@ export default {
   },
 
   computed: {
-    // ...mapState(['products']),
     products() {
       return this.$store.state.products
     },

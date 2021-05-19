@@ -17,7 +17,6 @@ export const actions = {
       `https://trayvonnorthern.com/Edgewood-API/public/api/products?page=${pageNumber}`
     )
     commit('SET_PAGINATION', pages)
-    // console.log(pageNumber)
   },
 }
 
@@ -34,4 +33,5 @@ export const state = () => ({
   products: {
     data: [],
   },
+  categories: [],
 })

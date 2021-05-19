@@ -24,6 +24,9 @@ export default {
   methods: {
     handleClicks() {
       this.pageNumber++
+      if (this.pageNumber > 3) {
+        this.pageNumber = 1
+      }
       this.$store.dispatch('getPagination', this.pageNumber)
     },
   },
