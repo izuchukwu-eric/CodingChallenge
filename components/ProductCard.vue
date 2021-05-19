@@ -10,7 +10,7 @@
         <div class="absolute bg-gray-900 w-full bg-opacity-75 bottom-0">
           <span class="text-white block text-center">{{ product.name }}</span>
           <span class="text-white block text-center"
-            >${{ product.price }}.00000</span
+            >${{ product.price }}.00</span
           >
         </div>
       </div>

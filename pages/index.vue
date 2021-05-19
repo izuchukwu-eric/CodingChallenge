@@ -1,9 +1,8 @@
 <template>
   <div class="bg-yellow-200 min-h-screen">
     <app-header />
-    <pagination>
-      <product-list />
-    </pagination>
+    <product-list />
+    <pagination />
   </div>
 </template>
 
