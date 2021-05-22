@@ -1,5 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  target: 'static',
+
   head: {
     title: 'CodingChallenge',
     htmlAttrs: {
@@ -36,12 +38,6 @@ export default {
   modules: ['@nuxtjs/axios'],
 
   axios: {},
-
-  target: 'static',
-
-  router: {
-    base: '/CodingChallenge/',
-  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
