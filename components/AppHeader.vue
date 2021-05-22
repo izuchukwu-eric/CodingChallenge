@@ -15,7 +15,7 @@
           />
         </svg>
         <select
-          v-model="sorting"
+          v-model="selectedCategory"
           class="
             border border-gray-300
             rounded-full
@@ -32,7 +32,7 @@
           @change="sortBy"
         >
           <option disabled value="">Select category</option>
-          <option value="Diary">Diary</option>
+          <option value="Dairy">Dairy</option>
           <option value="Cheese">Cheese</option>
           <option value="Specialties">Specialties</option>
         </select>
@@ -45,13 +45,13 @@
 export default {
   data() {
     return {
-      sorting: '',
+      selectedCategory: '',
     }
   },
 
   methods: {
     sortBy() {
-      this.$store.dispatch('getCategory', this.sorting)
+      this.$store.dispatch('getCategory', this.selectedCategory)
     },
   },
 }
